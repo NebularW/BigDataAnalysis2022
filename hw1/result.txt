@@ -9,7 +9,6 @@ for            	12
 is             	12
 in             	11
 this           	8
-               	7
 are            	7
 on             	7
 language       	6
