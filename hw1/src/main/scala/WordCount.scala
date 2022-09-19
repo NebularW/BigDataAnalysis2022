@@ -2,7 +2,7 @@ import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
 
 object WordCount {
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
 //    在电脑对应路径下应有一个用于存放单词的文件
         val inputFile = "D:\\Code\\Course\\BigDataAnalysis\\hw1\\test.txt"
         val conf = new SparkConf().setAppName("WordCount").setMaster("local[*]")
@@ -14,6 +14,5 @@ object WordCount {
 
         //将统计结果打印到控制台上
         wordCount.collect().foreach(println)
-    println("Hello World!")
   }
 }
