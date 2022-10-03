@@ -1,48 +1,32 @@
 # HAKE: Hierarchy-Aware Knowledge Graph Embedding
-This is the code of paper **Learning Hierarchy-Aware Knowledge Graph Embeddings for Link Prediction.** *Zhanqiu Zhang, Jianyu Cai, Yongdong Zhang, Jie Wang.* AAAI 2020.  [arxiv](https://arxiv.org/abs/1911.09419)
-
-## Dependencies
+## 依赖
 - Python 3.6+
 - [PyTorch](http://pytorch.org/) 1.0+
 
-## Results
-The results of **HAKE** and the baseline model **ModE** on **WN18RR**, **FB15k-237** and **YAGO3-10** are as follows.
+## 结果
+### ![实验结果](http://img.bittersweet.top/markdown/%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C.png)
 
-### WN18RR
-| | MRR |  HITS@1 | HITS@3 | HITS@10 |
-|:----------:|:----------:|:----------:|:----------:|:----------:|
-| ModE | 0.472 | 0.427 | 0.486 | 0.564 |
-| HAKE | 0.496 ± 0.001 | 0.452 | 0.516 | 0.582 |
+保存的模型和训练日志、测试日志在models目录下
 
+## 运行
 
-### FB15k-237
-| | MRR | HITS@1 | HITS@3 | HITS@10 |
-|:----------:|:----------:|:----------:|:----------:|:----------:|
-| ModE | 0.341 |  0.244 | 0.380 | 0.534 |
-| HAKE | 0.346 ± 0.001 |  0.250 | 0.381 | 0.542 |
-
-### YAGO3-10
-| | MRR | HITS@1 | HITS@3 | HITS@10 |
-|:----------:|:----------:|:----------:|:----------:|:----------:|
-| ModE | 0.510 |  0.421 | 0.562 | 0.660 |
-| HAKE | 0.546  ± 0.001 |  0.462 | 0.596 | 0.694 |
-
-
-## Running the code 
-
-### Usage
+### 使用方法
 ```
 bash runs.sh {train | valid | test} {ModE | HAKE} {wn18rr | FB15k-237 | YAGO3-10} <gpu_id> \
 <save_id> <train_batch_size> <negative_sample_size> <hidden_dim> <gamma> <alpha> \
 <learning_rate> <num_train_steps> <test_batch_size> [modulus_weight] [phase_weight]
 ```
-- `{ | }`: Mutually exclusive items. Choose one from them.
-- `< >`: Placeholder for which you must supply a value.
-- `[ ]`: Optional items.
+- `{ | }`: 单选项
+- `< >`: 必选项.
+- `[ ]`: 可选项
 
-**Remark**: `[modulus_weight]` and `[phase_weight]` are available only for the `HAKE` model.
+**注意**: `[modulus_weight]` 和 `[phase_weight]` 只对 `HAKE` 模型可用.
 
-To reproduce the results of HAKE and ModE, run the following commands.
+为了复现HAKE和ModE的结果，请运行以下命令：
+
+> linux系统环境下请在项目文件目录下运行以下命令
+>
+> windows系统环境下请使用git bash等在项目文件目录下运行以下命令
 
 ### HAKE
 ```bash
@@ -67,29 +51,4 @@ bash runs.sh train ModE FB15k-237 0 0 1024 256 1000 9.0 1.0 0.0001 100000 16
 # YAGO3-10
 bash runs.sh train ModE YAGO3-10 0 0 1024 256 500 24.0 1.0 0.0002 80000 4
 ```
-
-## Visualization
-To plot entity embeddings on a 2D plane (Figure 4 in our paper), please refer to this [issue](https://github.com/MIRALab-USTC/KGE-HAKE/issues/2).
-
-## Citation
-If you find this code useful, please consider citing the following paper.
-```
-@inproceedings{zhang2020learning,
-  title={Learning Hierarchy-Aware Knowledge Graph Embeddings for Link Prediction},
-  author={Zhang, Zhanqiu and Cai, Jianyu and Zhang, Yongdong and Wang, Jie},
-  booktitle={Thirty-Fourth {AAAI} Conference on Artificial Intelligence},
-  pages={3065--3072},
-  publisher={{AAAI} Press},
-  year={2020}
-}
-```
-
-## Acknowledgement
-We refer to the code of [RotatE](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding). Thanks for their contributions.
-
-## Other Repositories
-If you are interested in our work, you may find the following paper useful.
-
-**Duality-Induced Regularizer for Tensor Factorization Based Knowledge Graph Completion.**
-*Zhanqiu Zhang, Jianyu Cai, Jie Wang.* NeurIPS 2020. [[paper](https://arxiv.org/abs/2011.05816)] [[code](https://github.com/MIRALab-USTC/KGE-DURA)]
 
