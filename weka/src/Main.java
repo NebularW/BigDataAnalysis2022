@@ -1,5 +1,3 @@
-package com.nju.edu;
-
 import weka.core.Attribute;
 import weka.core.Instance;
 import weka.core.converters.ConverterUtils.DataSource;
