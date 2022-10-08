@@ -17,7 +17,7 @@ public class Cluster {
             int[] assignments = kMeans.getAssignments();
             int i = 0;
             for (int clusterNum : assignments) {
-                System.out.printf("Instance %d -> Cluster %d\n", i, clusterNum);
+                System.out.printf("Instance %d -> Cluster %d\t", i, clusterNum);
                 i++;
             }
         }catch (Exception e){
