@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aad4ceca-b9ff-49e5-9f07-5da25f550f54" name="Changes" comment="format">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BatchJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BatchJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StreamingJob.java" beforeDir="false" />
-    </list>
+    <list default="true" id="aad4ceca-b9ff-49e5-9f07-5da25f550f54" name="Changes" comment="change entry point" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +30,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -82,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666105016869</updated>
-      <workItem from="1666105018338" duration="1492000" />
+      <workItem from="1666105018338" duration="1766000" />
     </task>
     <task id="LOCAL-00001" summary="create flink project">
       <created>1666105120064</created>
@@ -105,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666105803693</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change entry point">
+      <created>1666106559013</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666106559013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +130,7 @@
     <MESSAGE value="create flink project" />
     <MESSAGE value="complete WordCount" />
     <MESSAGE value="format" />
-    <option name="LAST_COMMIT_MESSAGE" value="format" />
+    <MESSAGE value="change entry point" />
+    <option name="LAST_COMMIT_MESSAGE" value="change entry point" />
   </component>
 </project>
