@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aad4ceca-b9ff-49e5-9f07-5da25f550f54" name="Changes" comment="change entry point" />
+    <list default="true" id="6b87f4be-e8f9-4b65-8ec5-02f13232f67c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/BatchJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wxy/BatchJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +26,18 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Data\repository" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2GJS6A5Fj258M9XPR5iLORyw43E" />
+  <component name="ProjectId" id="2GLcodBWQ51R7C5wF1PjsTxYYl5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,12 +45,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RunManager">
@@ -43,7 +56,7 @@
       <option name="appName" />
       <option name="appServicePlanName" />
       <option name="appServicePlanResourceGroup" />
-      <option name="appSettingsKey" value="2b25775e-c152-4e21-91de-4989ef3ed5db" />
+      <option name="appSettingsKey" value="80d28c46-0a8e-437f-a6dd-316290e2cbae" />
       <option name="artifact" />
       <option name="autoPort" value="true" />
       <option name="debugOptions" />
@@ -70,46 +83,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BatchJob" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="org.wxy.BatchJob" />
+      <module name="flink" />
+      <option name="PROGRAM_PARAMETERS" value="--input &quot;C:\\Users\\Sky\\Desktop\\article.txt&quot; --output &quot;C:\\Users\\Sky\\Desktop\\output.txt&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.wxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BatchJob" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aad4ceca-b9ff-49e5-9f07-5da25f550f54" name="Changes" comment="" />
-      <created>1666105016869</created>
+      <changelist id="6b87f4be-e8f9-4b65-8ec5-02f13232f67c" name="Changes" comment="" />
+      <created>1666171480225</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666105016869</updated>
-      <workItem from="1666105018338" duration="1766000" />
+      <updated>1666171480225</updated>
+      <workItem from="1666171481457" duration="295000" />
     </task>
-    <task id="LOCAL-00001" summary="create flink project">
-      <created>1666105120064</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1666105120064</updated>
-    </task>
-    <task id="LOCAL-00002" summary="complete WordCount">
-      <created>1666105635830</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1666105635830</updated>
-    </task>
-    <task id="LOCAL-00003" summary="format">
-      <created>1666105803693</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1666105803693</updated>
-    </task>
-    <task id="LOCAL-00004" summary="change entry point">
-      <created>1666106559013</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1666106559013</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,12 +129,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="create flink project" />
-    <MESSAGE value="complete WordCount" />
-    <MESSAGE value="format" />
-    <MESSAGE value="change entry point" />
-    <option name="LAST_COMMIT_MESSAGE" value="change entry point" />
   </component>
 </project>
