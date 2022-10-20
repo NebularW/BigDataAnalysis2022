@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b87f4be-e8f9-4b65-8ec5-02f13232f67c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wxy/BatchJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wxy/BatchJob.java" afterDir="false" />
-    </list>
+    <list default="true" id="6b87f4be-e8f9-4b65-8ec5-02f13232f67c" name="Changes" comment="change a bug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,8 +106,16 @@
       <option name="presentableId" value="Default" />
       <updated>1666171480225</updated>
       <workItem from="1666171481457" duration="295000" />
-      <workItem from="1666267729969" duration="1452000" />
+      <workItem from="1666267729969" duration="1588000" />
     </task>
+    <task id="LOCAL-00001" summary="change a bug">
+      <created>1666269247475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666269247475</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,5 +131,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="change a bug" />
   </component>
 </project>
