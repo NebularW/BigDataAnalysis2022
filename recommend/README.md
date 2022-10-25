@@ -77,19 +77,24 @@ RMSE（Root Mean Square Error）均方根误差：真实值与差值的平方然
 
 公式如下：
 $$
-MSE = \sqrt[]{\frac{1}{m}\sum_{i=1}^m(y_i-f(x_i))^2}
+RMSE = \sqrt[]{\frac{1}{m}\sum_{i=1}^m(y_i-f(x_i))^2}
 $$
-
 
 #### Coverage
 
-Coverage 覆盖率：表示为每位用户推荐预测评分top10的电影的并集与电影总集合的比例
+Coverage 覆盖率，表示为每位用户推荐预测评分top10的电影的并集与电影总集合的比例
 
 ### 评估结果
 
-![image-20221025143110437](http://img.bittersweet.top/markdown/image-20221025143110437.png)
+结果如图所示：
 
+![image-20221025150403415](http://img.bittersweet.top/markdown/image-20221025150403415.png)
 
+RMSE=0.88，说明模型对目标用户对电影的预测评分与真实评分误差较小，故推荐电影也比较符合用户口味
+
+Coverage=0.92，说明模型推荐的电影覆盖范围广
+
+综上所述：模型在预测用户的电影评分、推荐各种电影上表现优秀。
 
 ## 四、推荐结果
 
