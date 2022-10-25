@@ -3,3 +3,4 @@ HAKE/models
 *.class
 flink/target/
 flink/.idea/workspace.xml
+recommend/.idea
