@@ -43,8 +43,7 @@ def get_user_sim_matrix(input_matrix):
         for j in range(i + 1, size):
             x = np.array(input_matrix[i])
             y = np.array(input_matrix[j])
-            sim = np.corrcoef(x, y)[0][1]
-            print(sim)            
+            sim = np.corrcoef(x, y)[0][1]            
             matrix[i, j] = sim
             matrix[j, i] = sim  # 对称矩阵, 对角线为0
     return matrix
@@ -124,14 +123,15 @@ def evaluation(user_sim_matrix, split=0.2):
             if ratings_matrix[user_index][movie_index] != 0:
                 res += (predict[movie_index] - ratings_matrix[user_index][movie_index]) ** 2
                 n += 1
+    average = math.sqrt(res / n)
     # 计算覆盖率
     for user_index in range(len(user_list)):
         recommend = get_CFRecommend(user_sim_matrix, user_index, 10, 10)
         for movie in recommend:
             cover[movie[0]] = 1
-    cover_rate = len(cover.keys()) / len(movie_list)
+    cover_rate = len(cover.keys()) / (len(movie_list)*split)
     # 输出评估结果
-    print('RMSE={}\nCoverage={}'.format(math.sqrt(res / n), cover_rate))
+    print('RMSE={}\nCoverage={}'.format(math.sqrt(average), cover_rate))
 
 # 读取表格数据
 ratings = pd.read_csv('./dataset/ratings.csv', index_col=None)
