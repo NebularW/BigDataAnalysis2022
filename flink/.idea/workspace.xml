@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b87f4be-e8f9-4b65-8ec5-02f13232f67c" name="Changes" comment="change a bug" />
+    <list default="true" id="6b87f4be-e8f9-4b65-8ec5-02f13232f67c" name="Changes" comment="change a bug">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recommend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../recommend/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +111,8 @@
       <workItem from="1666171481457" duration="295000" />
       <workItem from="1666267729969" duration="1588000" />
       <workItem from="1666537106442" duration="8000" />
+      <workItem from="1666864747573" duration="12000" />
+      <workItem from="1666957463679" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="change a bug">
       <created>1666269247475</created>

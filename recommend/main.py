@@ -2,6 +2,7 @@ import math
 import numpy as np
 import pandas as pd
 
+
 def get_list_index_map(list):
     """
     将列表转为map
@@ -31,6 +32,7 @@ def get_rating_matrix():
         matrix[user, movie] = rate
     return matrix
 
+
 def get_user_sim_matrix(input_matrix):
     """
     构造用户相似度矩阵
@@ -43,10 +45,11 @@ def get_user_sim_matrix(input_matrix):
         for j in range(i + 1, size):
             x = np.array(input_matrix[i])
             y = np.array(input_matrix[j])
-            sim = np.corrcoef(x, y)[0][1]            
+            sim = np.corrcoef(x, y)[0][1]
             matrix[i, j] = sim
             matrix[j, i] = sim  # 对称矩阵, 对角线为0
     return matrix
+
 
 def get_CFRecommend(matrix, index, k, n):
     """
@@ -129,9 +132,10 @@ def evaluation(user_sim_matrix, split=0.2):
         recommend = get_CFRecommend(user_sim_matrix, user_index, 10, 10)
         for movie in recommend:
             cover[movie[0]] = 1
-    cover_rate = len(cover.keys()) / (len(movie_list)*split*0.3)
+    cover_rate = len(cover.keys()) / (len(movie_list) * split * 0.3)
     # 输出评估结果
     print('RMSE={}\nCoverage={}'.format(RMSE, cover_rate))
+
 
 # 读取表格数据
 ratings = pd.read_csv('./dataset/ratings.csv', index_col=None)
@@ -145,9 +149,8 @@ movie_map, movie_map_reverse = get_list_index_map(movie_list)
 # 获得评分矩阵
 ratings_matrix = get_rating_matrix()
 
-
 if __name__ == '__main__':
-    k = 10 # KNN中的邻居数量
+    k = 10  # KNN中的邻居数量
     n = 5  # 推荐给用户的电影的数量
     # 获取用户相似度矩阵
     print("Calculating···")
@@ -160,7 +163,7 @@ if __name__ == '__main__':
         for i in range(n):
             res = get_CFRecommend(user_sim_matrix_by_rating, user_map[user], k, n)
             output.append([user, movie_map_reverse[res[i][0]]])
-            print('userId',user,"movieId",res[i][0])
+            print('userId', user, "movieId", res[i][0])
     # 保存结果
     print("Saving result···")
     np.savetxt('./result/movie.csv', output, delimiter=',', fmt="%s")
